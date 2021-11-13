@@ -17,7 +17,7 @@ I ran the model again with the same settings as before, but with the additional 
 
 ## Hyper parameter tuning
 ### How much better did your model preform after trying different hyper parameters?
-After extending training time to 900s, changing the metric from `root_mean_squared_error` to `mean_absolute_error`, and replacing the preset with `high_quality_fast_inference_only_refit`, my model performed a little better, improving from 0.55462 to 0.53653. I was curious on how much hyper parameters can do, so I extended the training tome to 1500s, used the original metric of `root_mean_squared_error` and preset of `best_quality`, and setting `num_bag_folds` to 5 and `num_stack_levels` to 1, and that raised my score to 0.47091.
+After extending training time to 900 seconds, changing the metric from `root_mean_squared_error` to `mean_absolute_error`, and replacing the preset with `high_quality_fast_inference_only_refit`, my model performed a little better, improving from 0.55462 to 0.53653. I was curious on how much hyper parameters can do, so I extended the training time to 1500 seconds, used the original metric of `root_mean_squared_error` and preset of `best_quality`, and setting `num_bag_folds` to 5 and `num_stack_levels` to 1, and that raised my score to 0.47091.
 
 ### If you were given more time with this dataset, where do you think you would spend more time?
 I would spend more time on adding more new features based on the current dataset. For example, derive a `period_of_time` column (morning/afternoon/evening). I would also clean up the data and remove outliers and less important features.
